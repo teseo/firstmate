@@ -1,0 +1,17 @@
+### STEP 1 — worker appends keyed descoped, then done: (the measured incident shape)
+--- status log ---
+descoped [key=descope-x]: dropped the follow-up because it was out of scope
+done: shipped the remaining half
+
+### STEP 2 — first drain surfaces the open descoped decision
+OPEN DECISIONS (still open, folded from the durable status logs - not just the latest line):
+task-descope [key=descope-x] descoped: dropped the follow-up because it was out of scope
+OPEN DECISIONS: close one by answering it: bin/fm-send.sh <task> --resolve-key <key> '<answer>'
+
+### STEP 3 — simulated restart (second drain) still re-presents it
+OPEN DECISIONS (still open, folded from the durable status logs - not just the latest line):
+task-descope [key=descope-x] descoped: dropped the follow-up because it was out of scope
+OPEN DECISIONS: close one by answering it: bin/fm-send.sh <task> --resolve-key <key> '<answer>'
+
+### STEP 4 — captain resolves the key; third drain no longer prints it open
+=== (no OPEN DECISIONS above = resolved) ===
